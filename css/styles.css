@@ -1,0 +1,173 @@
+:root {
+  /* Fonts */
+  --main-font-family: 'Poppins', sans-serif;
+
+  /* Colors */
+  --main-dark-color: #000;
+  --main-light-color: #fff;
+  --current-color: #939393;
+  --main-color: #8f95a5;
+  --secondary-color: #263238;
+  --border-color: #c4c4c4;
+  --badge-bg-color: #eeeeee;
+  --badge-color: #546269;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font-family);
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+
+  color: var(--main-color);
+}
+
+/* Common Styles */
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  color: inherit;
+
+  padding: 0;
+}
+
+.list {
+  list-style: none;
+
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section {
+  background-color: var(--main-light-color);
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.67;
+
+  color: var(--main-dark-color);
+}
+
+.current {
+  color: var(--current-color);
+}
+
+.container {
+  width: 1338px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Семантичне скриття елементів */
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Header */
+.header {
+  background-color: var(--main-light-color);
+
+  padding-top: 58px;
+  padding-bottom: 48px;
+}
+
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-logo {
+  font-size: 36px;
+  line-height: 1.5;
+
+  color: var(--main-dark-color);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item + .nav-item {
+  margin-left: 30px;
+}
+
+.nav-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--secondary-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--main-color);
+}
+
+.header-button {
+  background-color: var(--main--light-color);
+  color: var(--main-dark-color);
+  font-size: 24px;
+  line-height: 1.5;
+
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+
+  padding: 17px 57px;
+}
+
+.header-button:hover,
+.header-button:focus {
+  background-color: var(--main-color);
+  color: var(--main-light-color);
+}
+
+/* Hero */
+
+.hero-title {
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+
+  color: var(--main-dark-color);
+}
+
+.hero-description {
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.hero-button {
+  color: var(--main-light-color);
+  font-size: 36px;
+  line-height: 1.5;
+
+  background-color: var(--secondary-color);
+  border-radius: 15px;
+}
